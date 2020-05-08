@@ -34,7 +34,7 @@ try {
   }
   // Name to write and just download.
   if (!empty($_GET['name']) && isset($_GET['download'])) {
-    $image->toDownload('invitacion_' . $_GET['name']);
+    $image->toDownload('invitacion_' . $_GET['name'] . '.png');
   }
   // Display invitation
   else {
