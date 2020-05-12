@@ -2,7 +2,7 @@
 
 require '../src/claviska/SimpleImage.php';
 
-redirect('https://us02web.zoom.us/j/9327563790');
+// redirect('https://us02web.zoom.us/j/9327563790');
 
 function redirect($url) {
     ob_start();
@@ -40,7 +40,7 @@ try {
     ->text($texts['invitation_to']['text'], $texts['invitation_to']['options']);
   // It is homepage.
   if (!isset($_GET['name'])) {
-    alert("Cuando sea el momento te voy a redireccionar a zoom para que disfrutes del cumpleaño en casa :)");
+    alert("Fue una gran FIESTA. GRACIAS POR VENIR A MI CUMPLE. TE QUIERO MUCHO!!");
   }
   // Name to write and just download.
   if (!empty($_GET['name']) && isset($_GET['download'])) {
