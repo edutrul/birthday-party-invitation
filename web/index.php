@@ -1,5 +1,15 @@
 <?php
+
 require '../src/claviska/SimpleImage.php';
+
+redirect('https://us02web.zoom.us/j/9327563790');
+
+function redirect($url) {
+    ob_start();
+    header('Location: '.$url);
+    ob_end_flush();
+    die();
+}
 
 // Ignore notices
 error_reporting(E_ALL & ~E_NOTICE);
